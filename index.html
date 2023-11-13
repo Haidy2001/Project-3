@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome To Egypt</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-secondary-subtle">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="height: 80px; opacity: 0.6;">
+                <div class="container-fluid">
+                    <img class="rounded-circle mx-3 shadow" src="images/logo1.jpg" alt="logo" height="60" width="60">
+                    <a class="navbar-brand text-info text-uppercase border-end pe-2 egypt" href="#">egypt</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-info text-capitalize" aria-current="page" href="#">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info text-capitalize" href="#">link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-info text-capitalize text-center bg-body-tertiary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            trips
+                            </a>
+                            <ul class="dropdown-menu border-0">
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">cairo</a></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">alex</a></li>
+                            <li><hr class="dropdown-divider bg-info"></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">luxor</a></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">aswan</a></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">sharm el shikh</a></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">el glala</a></li>
+                            <li><a class="dropdown-item text-info text-uppercase" href="#">more...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-info text-capitalize" aria-disabled="true">about</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control border-info me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info btn-info text-light text-capitalize" type="submit">search</button>
+                        <button type="button" class="btn btn-outline-info btn-info text-light text-capitalize ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">login</button>
+                        </form>
+                    </div><!-- /collapse navbar-collapse -->
+                </div><!-- /container-fluid -->
+              </nav>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header bg-info text-white text-capitalize">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+                    <button type="button" class="btn-close bg-info-subtle" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label text-info text-capitalize">email address</label>
+                        <input type="email" class="form-control border-info" id="email" name="email">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label text-info text-capitalize">password</label>
+                        <input type="password" class="form-control border-info" id="pwd" name="pswd">
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remember me</label>
+                    </div>
+                    </form> 
+                </div><!-- /modal-body -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info text-white text-capitalize" data-bs-dismiss="modal">login</button>
+                    <button type="button" class="btn btn-info text-white text-capitalize" style="margin-left: 330px;">close</button>
+                </div><!-- /modal-footer -->
+                </div><!-- /modal-content -->
+            </div><!-- /modal-dialog -->
+        </div><!-- Modal fade-->
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <aside>
+            <div class=" container-fluid p-0" style="position: relative;">
+                <div class="icons d-flex flex-column justify-content-between ms-auto" style="position: fixed; z-index: 90; top: 200px; right: 40px;">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div><!-- /icons -->
+            </div><!-- /container-fluid -->
+        </aside>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/img1.jpg" class="d-block w-100" alt="cairo">
+                <div class="carousel-caption rounded-3">
+                    <h5 class="text-uppercase fs-1">cairo</h5>
+                    <p class="fs-5">We had such a great time in Egypt!</p>
+                    <button class="btn btn-info text-center text-capitalize text-white fs-5">visit us</button>
+                </div><!-- /carousel-caption -->
+                </div><!-- /carousel-item -->
+                <div class="carousel-item">
+                <img src="images/img5.jpg" class="d-block w-100" alt="aswan">
+                <div class="carousel-caption rounded-3">
+                    <h5 class="text-uppercase fs-1">aswan</h5>
+                    <p class="fs-5">Thank you, Aswan!</p>
+                    <button class="btn btn-info text-center text-capitalize text-white fs-5">visit us</button>
+                </div><!-- /carousel-caption -->
+                </div><!-- /carousel-item -->
+                <div class="carousel-item">
+                <img src="images/IMG-20230227-WA0036sharm.jpg" class="d-block w-100" alt="sharm el shikh">
+                <div class="carousel-caption rounded-3">
+                    <h5 class="text-uppercase fs-1">sharm el shikh</h5>
+                    <p class="fs-5">We love this city!</p>
+                    <button class="btn btn-info text-center text-capitalize text-white fs-5">visit us</button>
+                </div><!-- /carousel-caption -->
+                </div><!-- /carousel-item -->
+                <div class="carousel-item">
+                <img src="images/IMG-20230227-WA0039glala.jpg" class="d-block w-100" alt="el glalh">
+                <div class="carousel-caption rounded-3">
+                    <h5 class="text-uppercase fs-1">el glalh</h5>
+                    <p class="fs-5">We love this city!</p>
+                    <button class="btn btn-info text-center text-capitalize text-white fs-5">visit us</button>
+                </div><!-- /carousel-caption -->
+                </div><!-- /carousel-item -->
+            </div><!-- /carousel-inner -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><!-- /carousel -->
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+        <!-- basic card -->
+        <div class="card p-3 w-100 mb-3 text-white shadow-lg" style="background-color: rgb(158, 217, 219); border-top-right-radius: 0; border-bottom-left-radius: 0;">
+            <div class="card-body">
+                <h5 class="card-title welcome fs-4 fw-bolder text-uppercase text-primary">welcome</h5>
+                <p class="card-text">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, alex. From a one day
+                trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7 Customer Service.</p>
+                <a href="#" class="btn btn-light fs-5 text-info text-capitalize">learn more</a>
+            </div>
+        </div><!-- /basic card -->
+        <hr>
+        <div class="popular1 mb-4 text-center p-5 rounded-3 text-white fs-2 fw-semibold" style="background-color: cadetblue;">
+        Popular destinations in Egypt</div><!-- /popular1 -->
+        <!-- collapse Accordion -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-uppercase text-primary fs-5 fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        giza city
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body bg-light text-secondary">Major tourist destinations include the millennia-old monuments in the Nile Valley. Principal among them are the Pyramids and Great Sphinx at Giza</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-uppercase text-primary fs-5 fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        luxor city
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body bg-light text-secondary">Luxor, about 500 km south of Cairo, is the site of the ancient city of Thebes. It includes the ruins of the temple complexes at Karnak and Luxor, which stand within the modern city. On the opposite side of the Nile River lie the monuments, temples and tombs on the West Bank Necropolis, which include the Valley of the Kings and Valley of the Queens.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-uppercase text-primary fs-5 fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        sinai peninsula
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body bg-light text-secondary">Sinai has the beach resorts of Sharm el-Sheikh, Dahab, Nuweiba and Taba as well as locations mentioned in the Bible such as Mount Sinai ("Jabal Musa"). Saint Catherine's Monastery may be the oldest working Christian monastery in the world.</div>
+                </div>
+            </div>
+        </div><!-- /collapse Accordion -->
+        <hr>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="arabic p-3 text-center text-capitalize text-white fs-2 fw-semibold rounded-3" style="background-color: cadetblue;">
+        translate from arabic to english</div><!-- /arabic -->
+        <!-- card1 -->
+        <div class="card" style="background-color: rgb(158, 217, 219);;">
+            <div class="card-body">
+                <h4 class="card-title text-light fs-4 fw-normal">Write and Translate 
+                <a href="https://translate.google.com.eg/?hl=en" class="card-link press-here text-success-emphasis text-capitalize
+                link-underline link-underline-opacity-0" target="_blank">press here</a></h4>
+                <button type="button" class="btn btn-light text-capitalize text-info fs-5 border border-2" data-bs-toggle="tooltip" 
+                data-bs-placement="right" title="Copy to Clipboard" id="copy-btn">copy</button><br>
+                <textarea class="form-control mx-auto mt-3" name="text" id="trans" cols="30" rows="5" placeholder="translate:"></textarea>
+            </div><!-- /card-body -->
+        </div><!-- /card -->
+        <hr>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="french p-3 text-center text-capitalize text-white fs-2 fw-semibold rounded-3" style="background-color: cadetblue;">
+        translate from arabic to french</div><!-- /french -->
+        <!-- card2 -->
+        <div class="card" style="background-color: rgb(158, 217, 219);;">
+            <div class="card-body">
+                <h4 class="card-title text-light fs-4 fw-normal">Write and Translate 
+                <a href="https://translate.google.com.eg/?hl=en" class="card-link press-here text-success-emphasis text-capitalize
+                link-underline link-underline-opacity-0" target="_blank">press here</a></h4>
+                <button type="button" class="btn btn-light text-capitalize text-info fs-5 border border-2" data-bs-toggle="tooltip" 
+                data-bs-placement="right" title="Copy to Clipboard" id="copy-btn">copy</button><br>
+                <textarea class="form-control mx-auto mt-3" name="text" id="trans" cols="30" rows="5" placeholder="translate:"></textarea>
+            </div><!-- /card-body -->
+        </div><!-- /card -->
+        <hr>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="german p-3 text-center text-capitalize text-white fs-2 fw-semibold rounded-3" style="background-color: cadetblue;">
+        translate from arabic to german</div><!-- /german -->
+        <!-- card3 -->
+        <div class="card" style="background-color: rgb(158, 217, 219);;">
+            <div class="card-body">
+                <h4 class="card-title text-light fs-4 fw-normal">Write and Translate 
+                <a href="https://translate.google.com.eg/?hl=en" class="card-link press-here text-success-emphasis text-capitalize
+                link-underline link-underline-opacity-0" target="_blank">press here</a></h4>
+                <button type="button" class="btn btn-light text-capitalize text-info fs-5 border border-2" data-bs-toggle="tooltip" 
+                data-bs-placement="right" title="Copy to Clipboard" id="copy-btn">copy</button><br>
+                <textarea class="form-control mx-auto mt-3" name="text" id="trans" cols="30" rows="5" placeholder="translate:"></textarea>
+            </div><!-- /card-body -->
+        </div><!-- /card -->
+        <hr>
+        <div class="temple-image"></div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <section class="tours">
+            <div class="popular2 mb-5 text-center p-3 text-uppercase rounded-3 text-primary-emphasis" style="background-color: rgb(105, 187, 189);">
+            <h2 class="fs-1 fw-bold">popular destinations in Egypt</h2></div><!-- /popular2 -->
+            <div class="container-fluid">
+                <div class="row justify-content-around pb-5">
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/img3.jpg" alt="cairo" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">cairo</h5>
+                                <p class="card-text">Capital of Egypt</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/IMG-20230227-WA0035.jpg" alt="alexandria" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">alexandria</h5>
+                                <p class="card-text">The bride of the Mediterranean</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/img5luxor.jpg" alt="luxor" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">luxor</h5>
+                                <p class="card-text">The Capital of the Ancient Kingdom</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/img10.jpg" alt="aswan" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">aswan</h5>
+                                <p class="card-text">Nubian City in The South of Egypt</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/IMG-20230227-WA0047newcairo.jpg" alt="new capital" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">new capital</h5>
+                                <p class="card-text text-capitalize"> the new administrative capital</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/img2.jpg" alt="sharm el sheikh" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase" style="font-size: 18px;">sharm el sheikh</h5>
+                                <p class="card-text">Beautiful City in Egypt</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/img1siwa.jpg" alt="siwa" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">siwa</h5>
+                                <p class="card-text text-capitalize">sunset oasis</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+
+                    <div class="tours-item col-lg-3 col-md-4 col-sm-6 m-1 mt-5 mb-sm-0">
+                        <div class="card">
+                            <input type="image" src="images/zyanya-OMwEkftvQKs-unsplash.jpg" alt="hurghada" class="card-img-top shadow">
+                            <div class="card-body text-info pb-5 ps-4">
+                                <h5 class="card-title text-uppercase">hurghada</h5>
+                                <p class="card-text">City on The Red Sea</p>
+                                <button class="btn btn-info text-light text-capitalize ms-auto d-block">know more</button>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /tours-item -->
+                </div><!-- /row -->
+            </div><!-- /container-fluid -->
+        </section><!-- /tours -->
+        <div class="aswan-view-image"></div>
+        <hr>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <secction class="thanks">
+            <div class="thanks-for mb-5 text-center p-4 border-2 rounded-3 text-primary" style="background-color: rgb(158, 217, 219);">
+            <h2 class="text-uppercase fs-1 fw-semibold">thanks for</h2></div><!-- /thanks-for -->
+            <div class="container">
+                <div class="row justify-content-between pb-5">
+                    <div class="thanks-item col-lg-4 col-md-6 col-sm-12 mb-3 mb-sm-0">
+                        <div class="card">
+                            <img src="images/images.jpg" alt="card image" class="card-img-top">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#" class="text-white all-thanks link-underline link-underline-opacity-0">
+                                    All thanks and appreciation</a></h5>
+                                    <small><i class="far fa-clock"></i>October 15, 2020</small>
+                                </div><!-- /card-body -->
+                                <div class="card-footer border border-0">
+                                    <img src="images/images.jpg" alt="card image" class="rounded-circle border border-2" width="100" height="130">
+                                    <p class="card-text text-capitalize mb-0">Eng. samia fady "soma:)"</p>
+                                    <small>Director of UI/UX</small>
+                                </div><!-- /card-footer -->
+                            </div><!-- card-img-overlay -->
+                        </div><!-- /card -->
+                    </div><!-- /thanks-item -->
+                    <div class=" thanks-item col-lg-4 col-md-6 col-sm-12 mb-3 mb-sm-0">
+                        <div class="card">
+                            <img src="images/trainer-2.jpg" alt="card image" class="card-img-top">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#" class="text-white all-thanks link-underline link-underline-opacity-0">
+                                    All thanks and appreciation</a></h5>
+                                    <small><i class="far fa-clock"></i>October 15, 2020</small>
+                                </div><!-- /card-body -->
+                                <div class="card-footer border border-0">
+                                    <img src="images/trainer-2.jpg" alt="card image" class="rounded-circle border border-2" width="100" height="130">
+                                    <p class="card-text text-capitalize mb-0">Eng. fadia osama</p>
+                                    <small>Director of UI/UX</small>
+                                </div><!-- /card-footer -->
+                            </div><!-- /card-img-overlay -->
+                        </div><!-- /card -->
+                    </div><!-- /thanks-item -->
+                    <div class=" thanks-item col-lg-4 col-md-6 col-sm-12 mb-3 mb-sm-0">
+                        <div class="card">
+                            <img src="images/saly.jpeg" alt="card image" class="card-img-top">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#" class="text-white all-thanks link-underline link-underline-opacity-0">
+                                    All thanks and appreciation</a></h5>
+                                    <small><i class="far fa-clock"></i>October 15, 2020</small>
+                                </div><!-- /card-body -->
+                                <div class="card-footer border border-0">
+                                    <img src="images/saly.jpeg" alt="card image" class="rounded-circle border border-2" width="100" height="130">
+                                    <p class="card-text text-capitalize mb-0">Eng. sally adel</p>
+                                    <small>Director of UI/UX</small>
+                                </div><!-- /card-footer -->
+                            </div><!-- /card-img-overlay -->
+                        </div><!-- /card -->
+                    </div><!-- /thanks-item -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </secction><!-- /thanks -->
+        <hr class="my-4">
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <section class="egypt-news">
+            <div class="container">
+                <div class="news text-center"><h2 class="text-primary fs-1 fw-semibold text-uppercase">egypt news</h2></div><!-- /news -->
+                <div class="podcast card mb-4 shadow-lg">
+                    <div class="row g-0">
+                        <div class="podcast-article col-md-8">
+                            <div class="card-body ps-5 pt-5">
+                                <h5 class="card-title text-capitalize"><a href="#" class="podcast-link link-underline link-underline-opacity-0" 
+                                style="color: #04515f; font-size: 30px;">podcast title</a></h5>
+                                <p class="card-time text-capitalize" style="font-size: 13px;"><i class="fas fa-calendar-alt">mon, may 25th 2023</i></p>
+                                <p class="podcast-card-line line1"></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore 
+                                beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti 
+                                tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum 
+                                dolores nobis enim quidem excepturi, illum quos!</p>
+                                <ul class="podcast-card-list container-fluid d-flex">
+                                    <li><i class="fas fa-tag"></i>Podcast</li>
+                                    <li><i class="fas fa-clock"></i>55 mins.</li>
+                                    <li class="play-episode ep1"><a href="#" class="link-underline link-underline-opacity-0"><i class="fas fa-play"></i>Play Episode</a></li>
+                                </ul><!-- /news-card-list -->
+                            </div><!-- /card-body -->
+                        </div><!-- /podcast-article -->
+                        <div class="podcast-image col-md-4">
+                            <a href="#"><img src="images/IMG-20230227-WA0040.jpg" class="img-fluid rounded-end" alt="image title"></a>
+                        </div><!-- /podcast-image -->                        
+                    </div><!-- /row -->
+                </div><!-- /podcast -->
+
+                <div class="podcast card mb-4 shadow-lg">
+                    <div class="row g-0">
+                        <div class="podcast-image col-md-4">
+                            <a href="#"><img src="images/ralf-schlegel-gGIaHmXcSp8-unsplash.jpg" class="img-fluid rounded-end" alt="image title"></a>
+                        </div><!-- /podcast-image -->
+                        <div class="podcast-article col-md-8">
+                            <div class="card-body ps-5 pt-5">
+                                <h5 class="card-title text-capitalize"><a href="#" class="podcast-link link-underline link-underline-opacity-0" 
+                                    style="color: #04515f; font-size: 30px;">podcast title</a></h5>
+                                    <p class="card-time text-capitalize" style="font-size: 13px;"><i class="fas fa-calendar-alt">mon, may 25th 2023</i></p>
+                                    <p class="podcast-card-line line2"></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore 
+                                    beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti 
+                                    tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum 
+                                    dolores nobis enim quidem excepturi, illum quos!</p>
+                                    <ul class="podcast-card-list container-fluid d-flex">
+                                        <li><i class="fas fa-tag"></i>Podcast</li>
+                                        <li><i class="fas fa-clock"></i>55 mins.</li>
+                                        <li class="play-episode ep2"><a href="#" class="link-underline link-underline-opacity-0"><i class="fas fa-play"></i>Play Episode</a></li>
+                                    </ul><!-- /news-card-list -->
+                            </div><!-- /card-body -->
+                        </div><!-- /podcast-article -->
+                    </div><!-- /row -->
+                </div><!-- /podcast -->
+
+                <div class="podcast card mb-4 shadow-lg">
+                    <div class="row g-0">                        
+                        <div class="podcast-article col-md-8">
+                            <div class="card-body ps-5 pt-5">
+                                <h5 class="card-title text-capitalize"><a href="#" class="podcast-link link-underline link-underline-opacity-0" 
+                                    style="color: #04515f; font-size: 30px;">podcast title</a></h5>
+                                    <p class="card-time text-capitalize" style="font-size: 13px;"><i class="fas fa-calendar-alt">mon, may 25th 2023</i></p>
+                                    <p class="podcast-card-line line3"></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore 
+                                    beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti 
+                                    tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum 
+                                    dolores nobis enim quidem excepturi, illum quos!</p>
+                                    <ul class="podcast-card-list container-fluid d-flex">
+                                        <li><i class="fas fa-tag"></i>Podcast</li>
+                                        <li><i class="fas fa-clock"></i>55 mins.</li>
+                                        <li class="play-episode ep3"><a href="#" class="link-underline link-underline-opacity-0"><i class="fas fa-play"></i>Play Episode</a></li>
+                                    </ul><!-- /news-card-list -->
+                            </div><!-- /card-body -->
+                        </div><!-- /podcast-article -->
+                        <div class="podcast-image col-md-4">
+                            <a href="#"><img src="images/beautiful-interior-temple-dendera-temple.jpg" class="img-fluid rounded-end" alt="image title"></a>
+                        </div><!-- /podcast-image -->                        
+                    </div><!-- /row -->
+                </div><!-- /podcast -->
+
+                <div class="podcast card mb-4 shadow-lg">
+                    <div class="row g-0">
+                        <div class="podcast-image col-md-4">
+                            <a href="#"><img src="images/img4.jpg" class="img-fluid rounded-end" alt="image title"></a>
+                        </div><!-- /podcast-image -->
+                        <div class="podcast-article col-md-8">
+                            <div class="card-body ps-5 pt-5">
+                                <h5 class="card-title text-capitalize"><a href="#" class="podcast-link link-underline link-underline-opacity-0" 
+                                    style="color: #04515f; font-size: 30px;">podcast title</a></h5>
+                                    <p class="card-time text-capitalize" style="font-size: 13px;"><i class="fas fa-calendar-alt">mon, may 25th 2023</i></p>
+                                    <p class="podcast-card-line line4"></p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore 
+                                    beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti 
+                                    tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum 
+                                    dolores nobis enim quidem excepturi, illum quos!</p>
+                                    <ul class="podcast-card-list container-fluid d-flex">
+                                        <li><i class="fas fa-tag"></i>Podcast</li>
+                                        <li><i class="fas fa-clock"></i>55 mins.</li>
+                                        <li class="play-episode ep4"><a href="#" class="link-underline link-underline-opacity-0"><i class="fas fa-play"></i>Play Episode</a></li>
+                                    </ul><!-- /news-card-list -->
+                            </div><!-- /card-body -->
+                        </div><!-- /podcast-article -->
+                    </div><!-- /row -->
+                </div><!-- /podcast -->
+            </div><!-- /container -->
+        </section><!-- /egypt-news -->
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <section class="join">
+            <div class="container">
+                <div class="join text-center mb-4"><h2 class="text-primary fs-1 fw-semibold text-uppercase">join us</h2></div><!-- /news -->
+                <div class="row justify-content-between">
+                    <div class="join-item col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title text-capitalize text-info fs-3">subcribe now</h5>
+                                <input type="image" class="m-auto my-3 rounded-3" src="images/twetter.jpg" alt="twitter" height="80" width="80">
+                                <a href="#" class="link-underline link-underline-opacity-0 fs-4 text-info">Go to link</a>
+                            </div><!-- card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /join-item -->
+
+                    <div class="join-item col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title text-capitalize text-info fs-3">follow</h5>
+                                <input type="image" class="m-auto my-3 rounded-3" src="images/whats.jpg" alt="whatsapp" height="80" width="80">
+                                <a href="#" class="link-underline link-underline-opacity-0 fs-4 text-info">Go to link</a>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /join-item -->
+
+                    <div class="join-item col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title text-capitalize text-info fs-3">link the page</h5>
+                                <input type="image" class="m-auto my-3 rounded-3" src="images/in.jpg" alt="linkedin" height="80" width="80">
+                                <a href="#" class="link-underline link-underline-opacity-0 fs-4 text-info">Go to link</a>
+                            </div><!-- card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /join-item -->
+
+                    <div class="join-item col-lg-3 col-md-4 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title text-capitalize text-info fs-3">watch videos</h5>
+                                <input type="image" class="m-auto my-3 rounded-3" src="images/insta.jpg" alt="instgram" height="80" width="80">
+                                <a href="#" class="link-underline link-underline-opacity-0 fs-4 text-info">Go to link</a>
+                            </div><!-- /card-body -->
+                        </div><!-- /card -->
+                    </div><!-- /join-item -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </section><!-- /join -->
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <footer class="bg-info text-light pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-item col-md-4 text-center">
+                        <hr class="border-top border-3 border-light my-3">
+                        <h5 class="text-capitalize"><img class="rounded-circle me-2" src="images/logo1.jpg" alt="logo" height="70" width="70">good company</h5>
+                        <hr class="border-top border-3 border-light my-3">
+                        <address>
+                            <p>Tel : 000-000-000</p>
+                            <p>Address : EGYPT</p>
+                            <p>Fax : 000-000-000</p>
+                        </address>
+                    </div><!-- /footer-item -->
+
+                    <div class="footer-item col-md-4 text-center">
+                        <hr class="border-top border-3 border-light my-3">
+                        <h5 class="text-capitalize"><img class="rounded-circle me-2" src="images/logo1.jpg" alt="logo" height="70" width="70">important links</h5>
+                        <hr class="border-top border-3 border-light my-3">
+                        <p><a href="#" class="text-capitalize link-underline link-underline-opacity-0 text-primary-emphasis">visit us</a></p>
+                        <p><a href="#" class="text-capitalize link-underline link-underline-opacity-0 text-primary-emphasis">take a look</a></p>
+                        <p><a href="#" class="text-capitalize link-underline link-underline-opacity-0 text-primary-emphasis">your health is more important</a></p>
+                    </div><!-- /footer-item -->
+
+                    <div class="footer-item col-md-4 text-center">
+                        <hr class="border-top border-3 border-light my-3">
+                        <h5 class="text-capitalize"><img class="rounded-circle me-2" src="images/logo1.jpg" alt="logo" height="70" width="70">vision</h5>
+                        <hr class="border-top border-3 border-light my-3">
+                        <p>Services for all</p>
+                        <p>Provide best serveices</p>
+                        <p>You will be better than before</p>
+                    </div><!-- /footer-item -->
+                </div><!-- /row -->
+                <hr class="border-top border-3 border-light my-3">
+                <p class="copyright text-center text-uppercase fs-5">copyright &copy; 2023 haidy hendy danial, good company. all rights</p>
+                <hr class="border-top border-3 border-light my-3">
+            </div><!-- /container-fluid -->
+        </footer>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

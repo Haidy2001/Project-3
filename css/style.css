@@ -1,0 +1,195 @@
+.dropdown-toggle{
+    width: 70px;
+    border-radius: 5px; 
+    border: 2px solid; 
+    border-top-color:#5bc0de; 
+    border-left-color: #5bc0de; 
+    border-bottom-color: #6c757d; 
+    border-right-color: #6c757d;
+}
+.icons a i{
+    color: #04515f;
+    font-size: 60px;
+    line-height: 80px;
+}
+.icons a:hover i{
+    opacity: 0.4;
+}
+.carousel-item img{
+    height: 550px;
+    margin-top: 80px;
+}
+.carousel-caption{
+    background-color: rgba(116, 239, 243, 0.5);
+}
+.temple-image{
+    height: 300px;
+    background-image: url("../images/img9.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.tours-item .card input[type="image"]{
+    height: 400px;
+    width: 90%;
+    margin: auto;
+}
+.tours-item{
+    position: relative;
+}
+.tours-item .card::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #00dbde;
+    opacity: 0;
+    transition: 1s;
+}
+.tours-item .card:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.tours-item .card::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00dbde;
+    opacity: 0;
+    transition: 1s;
+}
+.tours-item .card:hover::before{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.tours-item .card-body button{
+    margin-top: -75px;
+}
+.aswan-view-image{
+    height: 300px;
+    background-image: url("../images/img7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card-img-top{
+    height: 450px;
+}
+.card-img-overlay{
+    background-color: rgba(49, 48, 48, 0.8); /*background-color: rgba(20, 20, 20, 0.425);*/
+    color: white;
+}
+.press-here:hover , .all-thanks:hover , .podcast-link:hover{
+    opacity: 0.5;
+}
+.thanks-item:hover{
+    transform: scale(0.9);
+}
+.thanks-item:hover .card-img-overlay{
+    background-color:  rgba(35, 79, 109, 0.8);/* alpha= 0.3785889356*/
+}
+.podcast{
+    background-color: #e1e5ea;
+    min-height: 400px;
+}
+.podcast-image a img{
+    min-height: 400px;
+}
+.podcast-card-line{
+    width: 50px;
+    height: 5px;
+    border-radius: 30px;
+    transition: 0.1s;
+}
+.line1{
+    background-color: #0076bd;
+}
+.line2{
+    background-color: #bd150b;
+}
+.line3{
+    background-color: #79dd09;
+}
+.line4{
+    background-color: #bdbb49;
+}
+.podcast:hover .podcast-card-line{
+    transform: scaleX(2);
+    margin-left: 25px;
+}
+/* .podcast:hover .podcast-image a img{
+    transform: scale(1.02);
+    margin: 2px;
+} */
+.podcast-card-list{
+    margin: 60px 0px 0px -10px;
+}
+.podcast-card-list li{
+    list-style-type: none;
+    margin-right: 10px;
+    background-color: rgb(146, 143, 143);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+.podcast-card-list li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.play-episode a{
+    color: #04515f;
+}
+.podcast-card-list .ep1:hover{
+    background-color: #0076bd;
+}
+.podcast-card-list .ep1:hover a{
+    color: rgb(161, 159, 159);
+}
+.podcast-card-list .ep2:hover{
+    background-color: #bd150b;
+}
+.podcast-card-list .ep2:hover a{
+    color: #149fb8;
+}
+.podcast-card-list .ep3:hover{
+    background-color: #79dd09;
+}
+.podcast-card-list .ep3:hover a{
+    color: #739399;
+}
+.podcast-card-list .ep4:hover{
+    background-color: #bdbb49;
+}
+.podcast-card-list .ep4:hover a{
+    color: #97cdd6;
+}
+.podcast-article{
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+}
+.join-item .card{
+    box-shadow: 10px 10px 30px 20px rgb(158, 158, 158);
+}
+.join-item .card-body input[type=image]{
+    box-shadow: 5px 5px 30px 10px gray;
+}
+footer h5 img{
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+}
+footer .footer-item p a:hover{
+    opacity: 0.5;
+}
+.copyright , .egypt , .popular2 h2 , .thanks-for h2 , .news h2 , .join h2{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+.egypt:hover{
+    text-shadow: 1px 1px 40px #084eb8; /*rgb(73, 62, 226)*/
+}
